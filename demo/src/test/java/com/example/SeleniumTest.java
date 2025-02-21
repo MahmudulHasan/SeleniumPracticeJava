@@ -2,6 +2,7 @@ package com.example;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,9 +13,13 @@ public class SeleniumTest {
 
     @BeforeClass
     public void setUp() {
-        WebDriver driver = new ChromeDriver();
-        driver.get(url);
+        driver = new ChromeDriver();
+        goHome();
         homePage = new HomePage(driver);
+    }
+    @BeforeMethod
+    public void goHome() {
+        driver.get("https://the-internet.herokuapp.com/");
     }
 
     @AfterClass
