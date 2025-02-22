@@ -12,6 +12,21 @@ This repository contains Java-based Selenium WebDriver automation scripts for pr
 - Logging events using **WebDriverEventListener**
 - Managing test execution with **TestNG**
 
+## GitHub Actions CI/CD Integration
+
+Successfully implemented **GitHub Actions** for automated testing and continuous integration.  
+Every push and pull request to the `main` branch triggers a workflow that:
+
+- **Builds the project** using Maven.
+- **Runs Selenium tests** in a headless Chrome browser.
+- **Ensures test stability** with automatic Chrome and ChromeDriver setup.
+
+### How It Works
+1. GitHub Actions installs **JDK 17** and **Maven**.
+2. It sets up **Google Chrome and ChromeDriver**.
+3. Runs `mvn clean test` in the `demo` folder.
+4. Reports build status in the GitHub repository.
+
 ## Prerequisites
 Ensure you have the following installed:
 - **Java JDK** (Version 8 or later)
