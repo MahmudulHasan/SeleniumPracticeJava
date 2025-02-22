@@ -14,7 +14,7 @@ public class SeleniumTest {
 
     @BeforeClass
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless"); // Run Chrome in headless mode
         options.addArguments("--no-sandbox"); // Bypass OS security model
