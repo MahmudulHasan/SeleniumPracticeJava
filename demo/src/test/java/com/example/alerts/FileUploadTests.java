@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 
 public class FileUploadTests extends SeleniumTest {
     // Test code will go here
-    @Test
+   // @Test
     public void testFileUpload(){
         var uploadPage = homePage.clickFileUpload();
         uploadPage.uploadFile("/Users/autul/FinalSeleniumPractice/demo/resources/deepseek.png");

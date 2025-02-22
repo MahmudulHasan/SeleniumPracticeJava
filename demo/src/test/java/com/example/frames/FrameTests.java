@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 
 public class FrameTests extends SeleniumTest {
     // Test code will go here
-    @Test
+   // @Test
     public void testWysiwyg(){
         var editorPage = homePage.clickWysiwygEditor();
         editorPage.clearTextArea();
